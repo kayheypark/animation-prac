@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Animation</title>
+    <style>
+        /* drink */
+        .drink > .monster { width: 190px; height: 240px;
+            background: url('monster.png') left center;
+            animation : ani 0.006s steps(10) infinite;
+        }
+        @keyframes ani {
+            0% {background-position: 0 0;}
+            /* 10% {background-position: calc((-190px)*1) 0;}
+            20% {background-position: calc((-190px)*2) 0;}
+            30% {background-position: calc((-190px)*3) 0;}
+            40% {background-position: calc((-190px)*4) 0;}
+            50% {background-position: calc((-190px)*5) 0;}
+            60% {background-position: calc((-190px)*6) 0;}
+            70% {background-position: calc((-190px)*7) 0;}
+            80% {background-position: calc((-190px)*8) 0;}
+            90% {background-position: calc((-190px)*9) 0;} */
+            100% {background-position: calc((-190px)*10) 0;}
+            
+        }
+
+        /* walk */
+        .walk > .monster { width: 190px; height: 240px;
+            background: url('monster.png') left center;
+            animation : ani 0.6s steps(10) infinite;
+        }
+        @keyframes ani {
+            0% {background-position: 0 0;}
+            100% {background-position: calc((-190px)*10) 0;}
+            
+        }
+        /* both */
+
+    </style>
+</head>
+<body>
+    <div class="drink">
+        <div class="monster"></div>
+    </div>
+
+    <div class="walk">
+        <div class="monster"></div>
+    </div>
+
+    <div class="both">
+        <div class="monster"></div>
+    </div>
+    
+</body>
+</html>
